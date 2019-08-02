@@ -112,6 +112,14 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.row {
+  max-width: 114rem;
+  /*standard 1140px = 114rem (divided by 10); will be 114 rem if viewport width is >=1140px otherwise will take 100% of viewport width*/
+  background-color: #eee;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #7ed56fb2, #28b485b2), url(../img/hero.jpg);
