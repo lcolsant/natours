@@ -1,7 +1,7 @@
 
 .row {
     max-width: $grid-width;    /*standard 1140px = 114rem (divided by 10); will be 114 rem if viewport width is >=1140px otherwise will take 100% of viewport width*/
-    background-color: #eee;
+    // background-color: #eee;
     margin: 0 auto;
     
     &:not(:last-child){
@@ -11,7 +11,7 @@
     @include clearfix;
 
     [class^="col-"] {  /*  attribute selector; select all elements with class attribute beginning with 'col-'  */
-        background-color: red;
+        // background-color: red;
         float: left;
         
         &:not(:last-child){
