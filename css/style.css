@@ -211,7 +211,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
-  .feature-box__text {
+  .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .row {
