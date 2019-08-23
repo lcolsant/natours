@@ -23,9 +23,36 @@
 
     &__img {
         height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden; //so image doesn't get cropped....may not need
+        transition: all .5s;
     }
 
     &__text {
         transform: skewX(12deg);
+    }
+    
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;  //fix glitch movement
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
     }
 }
