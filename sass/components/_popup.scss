@@ -51,8 +51,8 @@
             width: 100%;
             background-image: linear-gradient(
                 to right bottom,
-                $color-white 20%,
-                $color-primary 100%),
+                rgba($color-white, 0.8),
+                rgba($color-primary, 0.8)),
                 url(../img/nat-8.jpg);
             background-size: cover;
         }
