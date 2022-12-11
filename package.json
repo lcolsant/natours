@@ -9,7 +9,7 @@
   "author": "Lee Colsant",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
